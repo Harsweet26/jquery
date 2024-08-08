@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <p id="abc">hello hye</p>
+        <input type="button" id="aa"  value="show/hide">
+        <input type="button" id="ab"  value="show/hide">
+    </body>
+        <script>
+          /* $(document).ready(function(){
+                $(`#aa`).click(function(){
+                    $(`#abc`).slideUp('slow');
+                    $(`#abc`).slideUp('fast');
+                });
+                });
+                $(document).ready(function(){
+                $(`#ab`).click(function(){
+                    $(`#abc`).slideDown ('slow');
+                    $(`#abc`).slideDown ('fast');
+                });
+                });*/
+                $(document).ready(function(){
+                $(`#aa`).click(function(){
+                    $(`p`).slideToggle('slow');
+                });
+            });
+            $(document).ready(function(){
+                $(`#ab`).click(function(){
+                    $(`p`).slideToggle('fast');
+                });
+            });
+        </script>
+    
+</html>

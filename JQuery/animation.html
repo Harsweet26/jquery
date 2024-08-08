@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <p>hyee hello</p>
+        <input type="button" id="ab" value="start animation">
+        <div id="dd" style="background:#98bf21;height:100px;width:100px;position:absolute;">
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $(`#ab`).click(function(){
+                $(`#dd`).animate({right:'100px'});
+                $(`#dd`).animate({bottom:'100px'});
+                $(`#dd`).animate({left:'100px'});
+                $(`#dd`).animate({top:'100px'});
+                
+            });
+        });
+        
+    </script>
+</html>

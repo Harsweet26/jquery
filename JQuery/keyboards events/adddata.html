@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <button id="btn">add data</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Eveniet aliquid, unde, consequatur eligendi obcaecati perspiciatis 
+             error aspernatur, amet blanditiis repellat enim.
+             Explicabo, similique? Provident illo saepe labore adipisci itaque autem.</p>
+    </body>
+    <script>
+       $(document).ready(function(){
+       $('#btn').click(function(){
+        $('p').append("<b>its lorem!</b>");
+        });
+        $('#btn').click(function(){
+        $('p').prepend("<b>its lorem!</b>");
+        });
+        $('#btn').click(function(){
+        $('p').after("<b>its lorem!</b>");
+        });
+        $('#btn').click(function(){
+        $('p').before("<b>its lorem!</b>");
+        });
+        });
+    </script>
+</html>

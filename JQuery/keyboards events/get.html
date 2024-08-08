@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <button id="showtext">showtext</button>
+        <button id="showhtml">showhtml</button>
+        <p style="color: blue ;">write text here</p>
+    </body>
+    <script>
+        $(document).ready(function(){
+        $('#showtext').click(function(){
+        alert("text:"+$('p').text());
+         });
+         $('#showhtml').click(function(){
+        alert("html:"+$('p').html());
+        });
+    });
+    </script>
+</html>

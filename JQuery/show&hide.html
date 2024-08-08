@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+        <body>
+            <p>hello hye</p>
+            <input type="button" id="sh"  value="show">
+              <input type="button" id="hi" value="hide">
+          
+            <script>
+                $(document).ready(function(){
+                    $(`#hi`).click(function(){
+                        $(`p`).hide(2000);
+                    });
+                    $(`#sh`).click(function(){
+                       $(`p`).show(2000);
+                      
+                    });
+                });
+            </script>
+        </body>
+</html>

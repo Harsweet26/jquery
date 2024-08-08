@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <button id="settext">settext</button>
+        <button id="sethtml">sethtml</button>
+        <button id="setval">setval</button>
+        <p style="color: crimson;text-decoration: solid;
+        text-transform: capitalize;">write here anything</p>
+        <h1 style="color: brown;text-transform: uppercase;">hello jquery!</h1>
+        <input type="text">
+    </body>
+    <script>
+        $(document).ready(function(){
+        $(document).click(function(){
+        $('p').text("it's harsweet");
+        });
+        $('#sethtml').click(function(){
+        $('h1').html("<b>hello jquery</b>");
+        });
+        $('#setval').click(function(){
+        $('input').val("demo");
+        });
+        });
+    </script>
+</html>

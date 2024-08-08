@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <button id="btn">stop</button>
+        <div id="abc"> click here to slideDown</div>
+        <div id="pqr">hello</div>
+    </body>
+    <script>
+        $(document).ready(function(){
+          $("#abc").click(function(){
+          $("#pqr").slideDown('slow');
+          });
+          $("#btn").click(function(){
+          $("#pqr").stop();
+          });
+        });
+    </script>
+    <style> 
+        #pqr, #abc {
+          padding: 5px;
+          font-size: 18px;
+          text-align: center;
+          background-color: #b2ebee;
+          color: rgb(96, 135, 5);
+          border: solid 1px #2d14e9;
+          border-radius: 3px;
+        }
+        
+        #pqr{
+          padding: 80px;
+          display: none;
+        }
+        </style>
+</html>

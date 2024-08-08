@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        name<input type="text" id="user"><br>
+        <h5 id="usercheck" style="color: #f00;">** username is missing</h5>
+     
+       fname<input type="text" id="fname">
+       <h5 id="check" style="color: #f00;">** username is missing</h5>
+       <input type="button"  id="btn" ><br>
+    </body>
+    <script>
+        $(document).ready(function(){
+          $('#usercheck').hide();
+          let usernamerror=true;
+          $('#user').keyup(function(){
+            validationuser()
+        
+        });
+
+        function validationuser()
+        {
+            let uservalue=$('#user').val();
+            if(uservalue.length=='')
+            {
+                $('#usercheck').show();
+                usernamerror=false;
+                return false;
+            }
+            else if(uservalue.length<3||uservalue.length>10)
+            {
+                $('#usercheck').show();
+                $('#usercheck').html("#length must be 10  characters");
+                usernamerror=false;
+                return false;
+            }
+            else{
+                $('#usercheck').hide();
+            }
+        }
+        
+        $('#btn').click(function(){
+            validationuser();
+            if(usernamerror=true)
+            {
+                return true;
+            }
+            else{
+                return false;
+            }
+        });
+        $(document).ready(function(){
+          $('#check').hide();
+          let usernamerror=true;
+          $('#fname').keyup(function(){
+            validationuser()
+        
+        });
+
+        function validationuser()
+        {
+            let uservalue=$('#fname').val();
+            if(uservalue.length=='')
+            {
+                $('#check').show();
+                usernamerror=false;
+                return false;
+            }
+            else if(uservalue.length<3||uservalue.length>10)
+            {
+                $('#check').show();
+                $('#check').html("#length must be 10  characters");
+                usernamerror=false;
+                return false;
+            }
+            else{
+                $('#check').hide();
+            }
+        }
+        
+        $('#btn').click(function(){
+            validationuser();
+            if(usernamerror=true)
+            {
+                return true;
+            }
+            else{
+                return false;
+            }
+        });
+    });
+    });
+    </script>
+</html>
